@@ -1,0 +1,24 @@
+{
+  "name": "paymentmicroservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "paymentService.js",
+  "scripts": {    
+    "deploy":"firebase deploy --only functions:payment",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-functions": "^5.0.0",
+    "@google-cloud/functions": "^3.3.0",
+    "@google-cloud/storage": "^7.11.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "stripe": "^15.6.0"
+  }
+}
